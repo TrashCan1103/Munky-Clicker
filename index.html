@@ -5,95 +5,124 @@
     </head>
     <body>
         <h1 class="text" style="color:#EE5A3B; text-align:center;">Munky Clicker</h1>
-        <div class="hud-top">
-            <p id="multiplier"></p>
-            <p id="incomeMulti"></p>
-            <p id="money"></p>
-        </div>
-        <div class="hud-bottom">
-            <div class="hud-bottom-footer">
-                <h4 class = "text">Brought to you by xReqs_, TrashCan1103, and (sort of) linedhurdle shout out to cchen</h4>
+        <div class = "main";>
+            <div class="hud-center";>
+                <div class="hud-top";>
+                    <p id="multiplier";></p>
+                    <p id="incomeMulti";></p>
+                    <p id="money";></p>
+                </div>
+                <div id="hud-main-button";>
+                <button id="main-button" disp;lay="block" ><img src="https://www.jamiesale-cartoonist.com/wp-content/uploads/cartoon-monkey-free.png" alt="Error" class="center"></button>
+            </div>
+            </div>
+            <div class="hud-left";>
+                <div class="menu">
+                    <button class="menuButton" id="menu-shop"></button>
+                    <button class="menuButton" id="menu-settings"></button>
+                    <button class="menuButton" id="menu-stats"></button>
+                </div>
+                <div class="shop-top"><p>Shop</p></div>
+                <div class="shop">
+                    <div class="shop-banana item" style="display:none;" class= "hud-tooltips">
+                        <br>
+                        <p style="display:inline; margin:0;">Banana Picker: </p>
+                        <button id="bananaButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-munky item" style="display:none;" class= "hud-tooltips">
+                        <br>
+                        <p style="display:inline; margin:0;">Munky: </p>
+                        <button id="munkyButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-chef-munky item" style="display:none;" class= "hud-tooltips">
+                        <br>
+                        <p style="display:inline; margin:0;">Chef Munky: </p>
+                        <button id="chefButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-rockstar-munky item" style="display:none;" class= "hud-tooltips">
+                        <br>
+                        <p style="display:inline; margin:0;">Rockstar Munky: </p>
+                        <button id="rockstarButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-explorer-munky item" style="display:none;" class= "hud-tooltips">
+                        <br>
+                        <p style="display:inline; margin:0;">Explorer Munky: </p>
+                        <button id="explorerButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-pirate-munky item" style="display:none;" class= "hud-tooltips">
+                        <br>
+                        <p style="display:inline; margin:0;">Pirate Munky: </p>
+                        <button id="pirateButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-scientist-munky item" style="display:none;" class= "hud-tooltips">
+                        <br>
+                        <p style="display:inline; margin:0;">Scientist Munky: </p>
+                        <button id="scientistButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-spy-munky item" style="display:none;">
+                        <br>
+                        <p style="display:inline; margin:0;">Spy Munky: </p>
+                        <button id="spyButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-ninja-munky item" style="display:none;">
+                        <br>
+                        <p style="display:inline; margin:0;">Ninja Munky: </p>
+                        <button id="ninjaButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-robo-munky item" style="display:none;">
+                        <br>
+                        <p style="display:inline; margin:0;">Robo Munky: </p>
+                        <button id="roboButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-superhero-munky item" style="display:none;">
+                        <br>
+                        <p style="display:inline; margin:0;">Superhero Munky: </p>
+                        <button id="superheroButton" style="font-size:20;"></button>
+                    </div>
+                    <div class="shop-space-munky item" style="display:none;">
+                        <br>
+                        <p style="display:inline; margin:0;">Space Munky: </p>
+                        <button id="spaceButton" style="font-size:20;"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hud-right";>
+                <div class="socials">
+                    <button id="discord"></button>
+                    <button id="reddit"></button>
+                    <button id="twitter"></button>
+                    <button id="youtube"></button>
+                </div>
+                <div class="upgrades-top"><p>Upgrades</p></div>
+                <div class="upgrades">
+                    <div class = "upgradeItem1 upgradeItem" style="display:none;">
+                        <p style="display:inline; margin:0;">Need Mor Cliks: </p>
+                        <button id="clickUpg1" style="font-size:20;" ></button>
+                    </div>
+                    <div class = "upgradeItem2 upgradeItem" style="display:none;" >
+                        <p style="display:inline; margin:0;">Munky Power: </p>
+                        <button id="munkyUpg2" style="font-size:20;" ></button>
+                    </div>
+                    <div class = "upgradeItem3 upgradeItem" style="display:none;" >
+                        <p style="display:inline; margin:0;">Chef's Air Fryers: </p>
+                        <button id="munkyUpg3" style="font-size:20;"></button>
+                    </div>
+                    <div class = "upgradeItem4 upgradeItem" style="display:none;" >
+                        <p style="display:inline; margin:0;">Bussin' Boom  Boxes: </p>
+                        <button id="munkyUpg4" style="font-size:20;"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hud-bottom";>
             </div>
         </div>
-        <div id="hud-main-button">
-            <button id="main-button" display="block" ><img src="https://www.jamiesale-cartoonist.com/wp-content/uploads/cartoon-monkey-free.png" alt="Error" class="center"></button>
+        <div class="hud-tooltips";>
+            <div id="hud-tooltip";></div>
         </div>
-        <div class="shop-top">
-            <h1 class="display:flex;">Shop</h1>
+        <div class="footer";>
+        <p class = "text";>Brought to you by xReqs_, TrashCan1103, and (CEO of the company) linedhurdle shout out to cchen & Kronzal</p>
         </div>
-        <div class="hud-left shop">
-            <div class="shop-banana item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Banana Picker: </p>
-                <button id="bananaButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Munky: </p>
-                <button id="munkyButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-chef-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Chef Munky: </p>
-                <button id="chefButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-rockstar-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Rockstar Munky: </p>
-                <button id="rockstarButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-explorer-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Explorer Munky: </p>
-                <button id="explorerButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-pirate-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Pirate Munky: </p>
-                <button id="pirateButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-scientist-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Scientist Munky: </p>
-                <button id="scientistButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-spy-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Spy Munky: </p>
-                <button id="spyButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-ninja-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Ninja Munky: </p>
-                <button id="ninjaButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-robo-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Robo Munky: </p>
-                <button id="roboButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-superhero-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Superhero Munky: </p>
-                <button id="superheroButton" style="font-size:20;"></button>
-            </div>
-            <div class="shop-space-munky item" style="display:none;">
-                <br>
-                <p style="display:inline; margin:0;">Space Munky: </p>
-                <button id="spaceButton" style="font-size:20;"></button>
-            </div>
-        </div>
-        <div class="hud-right upgrades">
-          <div class = "upgradeItem1 upgradeItem" style="display:none; >
-          <p style="display:inline; margin:0; font-size:25;">Need Mor Cliks</p>
-            <button id="clickUpg1" style="font-size:20;" ></button>
-          </div>
-        </div>
-        <div class="hud-tooltips">
-            <img src="https://cdn.discordapp.com/attachments/893591798952370206/1171287788570816673/image.png?ex=655c21c2&is=6549acc2&hm=5e866443fac7536371ae90e4943bb0b932140390a05b0628faca9666f708081e&">
-            <div id="hud-tooltip"></div>
-        </div>
-        <script src="app.js"></script>
+        <script src="app.js";></script>
 
     </body>
 </html>
