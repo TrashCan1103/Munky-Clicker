@@ -60,6 +60,7 @@
     justify-content:space-evenly;
     height:7%;
     border:5px solid black;
+    background-color:black;
 }
 .socials a {
     height:100%;
