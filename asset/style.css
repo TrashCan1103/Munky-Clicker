@@ -66,12 +66,15 @@
     width:24.75%;
     height:100%;
     border:2px solid white;
-}
-#discord {
-    background-image: url(./images/discord-icon.png);
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain;
+}
+#discord {
+    background-image: url(./images/discord-icon.png);
+}
+#reddit {
+    background-image: url(./images/reddit-icon.png);
 }
 .upgrades-top {
     height:7%;
