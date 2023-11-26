@@ -67,7 +67,9 @@
     border:2px solid black;
 }
 #discord {
-    background-image:images/discord-icon.png;
+    background-image: url(./images/discord-icon.png);
+    background-repeat:no-repeat;
+    background-position:center;
 }
 .upgrades-top {
     height:7%;
