@@ -841,4 +841,3 @@ upgrades.style.width = (hudLeft.clientWidth)-40+"px";
 
 var socials = document.getElementsByClassName("socials")[0];
 socials.style.width = (hudLeft.clientWidth)-40+"px";
-
