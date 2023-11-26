@@ -247,8 +247,6 @@ button:hover {
     border-left:8px solid rgb(118, 193, 32);
     border-bottom:2px solid rgb(183, 113, 8);
 }
-
-
 .click-score {
     position: absolute;
     display: none;
