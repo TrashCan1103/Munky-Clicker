@@ -70,6 +70,7 @@
     background-image: url(./images/discord-icon.png);
     background-repeat:no-repeat;
     background-position:center;
+    background-size:contain;
 }
 .upgrades-top {
     height:7%;
