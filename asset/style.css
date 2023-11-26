@@ -21,8 +21,8 @@
 .menuButton {
     height:100%;
     width:33%;
-    display:relative;
-    background-color:white;
+    position:relative;
+    background-color:#d1c5b5;
     border:2px solid black;
 }
 
