@@ -39,7 +39,6 @@ toDeBug.addEventListener("click", function()
 });
 */
 
-
 function getRndInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) +min);
 }
@@ -182,7 +181,7 @@ function moneyIncome() {
     {
         document.getElementsByClassName("shop-banana")[0].style.display="block";
     }
-    if (money >= 5)
+    if (money >= 10)
     {
         document.getElementsByClassName("shop-munky")[0].style.display="block";
     }
