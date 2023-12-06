@@ -1,4 +1,6 @@
-
+body {
+    overflow:hidden;
+}
 .hud-left {
     position:absolute;
     display:flex;
@@ -23,20 +25,52 @@
     position:relative;
     background-color:#d1c5b5;
     border:2px solid black;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    z-index:99;
 }
-
+#menu-settings {
+    background-image:url(./images/wrench.png);
+}
+#menu-stats {
+    background-image:url(./images/stats.png);
+}
+#menu-shop {
+    background-image:url(./images/shop.png);
+}
 .shop-top {
     height:7%;
+    display:flex;
     position:relative;
+    align-items:center;
+    justify-content:center;
     text-align:center;
     background-color:#7086ab;
     border:5px solid black;
-}
-.shop-top p{
-    line-height:100%;
+    font-size:40px;
 }
 
 .shop {
+    position:relative;
+    background-color:rgb(0,0,0,0.2);
+    border:5px solid black;
+    overflow-y:auto;
+}
+.settings {
+    display:flex;
+    position:relative;
+    background-color:rgb(0,0,0,0.2);
+    border:5px solid black;
+    overflow-y:auto;
+}
+#admin-console {
+    width:100%;
+    height:100%;
+    z-index:1000;
+}
+.stats {
+    display:none;
     position:relative;
     background-color:rgb(0,0,0,0.2);
     border:5px solid black;
@@ -77,10 +111,14 @@
 }
 .upgrades-top {
     height:7%;
+    display:flex;
     position:relative;
+    align-items:center;
+    justify-content:center;
     text-align:center;
     background-color:#7086ab;
     border:5px solid black;
+    font-size:40px;
 }
 .upgrades {
     position:relative;
@@ -89,13 +127,11 @@
     overflow-y:auto;
     background-color:rgb(0,0,0,0.2);
 }
-#multiplier {
-    font-size:20px;
-    font:monospace;
-    color:brown;
-}
+
 #incomeMulti {
-    font-size:20px;
+    position:relative;
+    font-size:25px;
+    top:20%;
     font:monospace;
     color:brown;
 }
@@ -105,6 +141,7 @@
 }
 .shop button {
     background-color:teal;
+    font-size:30px;
 }
 .shop p {
     font-size:30;
@@ -119,20 +156,30 @@
     background-color:rgb(179, 255, 255);
     border-left:8px solid rgb(0, 179, 179);
     border-bottom:2px solid rgb(0, 128, 128);
+    font-size:30px;
+}
+.item label {
+    position:absolute;
+    bottom:5px;
+    left:5px;
+    font-size:20px;
 }
 .hud-center {
-    top:0px;
     position:absolute;
+    top:0px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     width:34%;
     left:33%;
     background-color:white;
     height:100%;
 }
 .hud-top {
+    position:relative;
     height:20%;
     width:100%;
     top:5%;
-    position:absolute;
     text-align:center;
     background-color:rgb(0,0,0,0.2);
 }
@@ -149,27 +196,25 @@ img{
   width: 50%;
 }
 #money {
-    font-size:30px;
+    position:relative;
+    top:10%;
+    font-size:60px;
     font:monospace;
-    color:lightgreen;
+    color:#88b04b;
 }
 
 .text {
     font-family:'Courier New', monospace;
 }
 #hud-main-button {
-    position:absolute;
-    width:90%;
-    padding-top:90%;
-    left:5%;
-    top:30%;
+    top:7%;
+    position:relative;
+    display:block;
 }
 #main-button {
-    position:absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    display:block;
+    position:relative;
+    left: 10px;
     border-radius:60%;
     box-shadow: 0 9px #999;
     background-color:teal;
@@ -183,10 +228,6 @@ img{
 button:hover {
     cursor:pointer;
 }
-
-
-
-
 
 .tooltip {
   position: relative;
@@ -238,14 +279,13 @@ button:hover {
     padding-right:5px;
 }
 #hud-tooltip {
-    position:inline-block;
-    height:auto;
     background-color:#006D5B;
     border:solid 5px black;
     padding:4px 4px 4px;
     color:#43a59a
 }
 .upgradeItem {
+    display:none;
     position:relative;
     justify-content:center;
     padding-left:5px;
@@ -257,7 +297,7 @@ button:hover {
     border-bottom:2px solid rgb(183, 113, 8);
 }
 .click-score {
-    position: absolute;
+    position: absolute; 
     display: none;
     pointer-events: none;
     background: #333;
@@ -265,13 +305,19 @@ button:hover {
     padding: 5px 10px;
     border-radius: 5px;
     text-align: center;
-    animation: fade 3s;
-    transition: 0.5 ease;
+    animation: clickMove 3s;
+    transition: transform ease-in;
+    
 }
-@keyframes fade {
-    from { opacity: 1; }
-    to { opacity: 0; }
+@keyframes clickMove {
+    from { opacity: 1; transform:translate(0px);}
+    to { opacity: 0; transform:translate(var(--x-amount), var(--y-amount));}
 }
+:root {
+    --x-amount:2px;
+    --y-amount:2px;
+}
+
 .main {
     width:auto;
     height:auto;
@@ -283,3 +329,25 @@ button:hover {
     position:absolute;
     border:5px solid black;
 }
+.stats {
+    color:white;
+}
+
+
+.individual-stat {
+    color:black;
+    background-color:#dab38b;
+    margin:3px;
+    font-family:'Courier New', monospace;
+    font-size:30px;
+    border:7px solid #744d25;
+    padding:5px;
+}    
+
+
+#stats-div {
+    background-color:rgb(0,0,0,0.2);
+    font-size:30px;
+    font-family:'Courier New', monospace;
+}
+
