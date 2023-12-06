@@ -214,7 +214,6 @@ img{
 #main-button {
     display:block;
     position:relative;
-    left: 10px;
     border-radius:60%;
     box-shadow: 0 9px #999;
     background-color:teal;
