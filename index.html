@@ -1,93 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="en"><head>
         <title>Munky Clicker</title>
         <link rel="stylesheet" href="asset/style.css">
     </head>
     <body>
         <h1 class="text" style="color:#EE5A3B; text-align:center;">Munky Clicker</h1>
-        <div class = "main";>
+        <div class="main";>
             <div class="hud-center";>
                 <div class="hud-top";>
-                    <p id="multiplier";></p>
-                    <p id="incomeMulti";></p>
-                    <p id="money";></p>
+                    <label id="money";></label>
+                    <br>
+                    <label id="incomeMulti";></label>
                 </div>
                 <div id="hud-main-button";>
-                <button id="main-button"><img src="https://www.jamiesale-cartoonist.com/wp-content/uploads/cartoon-monkey-free.png" alt="Error" class="center"></button>
+                    <button id="main-button";><img src="https://www.jamiesale-cartoonist.com/wp-content/uploads/cartoon-monkey-free.png" alt="Error" class="center"></button>
+                </div>
             </div>
-            </div>
-            <div class="hud-left";>
+            <div class="hud-left" ;>
                 <div class="menu">
                     <button class="menuButton" id="menu-shop"></button>
                     <button class="menuButton" id="menu-settings"></button>
                     <button class="menuButton" id="menu-stats"></button>
                 </div>
                 <div class="shop-top"><p>Shop</p></div>
-                <div class="shop">
-                    <div class="shop-banana item" style="display:none;" class= "hud-tooltips">
+                <div class="shop" >
+                    <div class="shop-banana item" style="display: block;">
                         <br>
                         <p style="display:inline; margin:0;">Banana Picker: </p>
-                        <button id="bananaButton" style="font-size:20;"></button>
+                        <button id="bananaButton" style="font-size:20;">$5</button>
+                        <label id="howManyBanana">x0</label>
                     </div>
-                    <div class="shop-munky item" style="display:none;" class= "hud-tooltips">
+                    <div class="shop-munky item" style="display: block;">
                         <br>
                         <p style="display:inline; margin:0;">Munky: </p>
-                        <button id="munkyButton" style="font-size:20;"></button>
+                        <button id="munkyButton" style="font-size:20;">$25.00</button>
+                        <label id="howManyMunky">x0</label>
                     </div>
-                    <div class="shop-chef-munky item" style="display:none;" class= "hud-tooltips">
+                    <div class="shop-chef-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Chef Munky: </p>
-                        <button id="chefButton" style="font-size:20;"></button>
+                        <button id="chefButton" style="font-size:20;">$500.00</button>
+                        <label id="howManyChef">x0</label>
                     </div>
-                    <div class="shop-rockstar-munky item" style="display:none;" class= "hud-tooltips">
+                    <div class="shop-rockstar-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Rockstar Munky: </p>
-                        <button id="rockstarButton" style="font-size:20;"></button>
+                        <button id="rockstarButton" style="font-size:20;">$2000</button>
+                        <label id="howManyRockstar">x0</label>
                     </div>
-                    <div class="shop-explorer-munky item" style="display:none;" class= "hud-tooltips">
+                    <div class="shop-explorer-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Explorer Munky: </p>
-                        <button id="explorerButton" style="font-size:20;"></button>
+                        <button id="explorerButton" style="font-size:20;">$10000</button>
+                        <label id="howManyExplorer">x0</label>
                     </div>
-                    <div class="shop-pirate-munky item" style="display:none;" class= "hud-tooltips">
+                    <div class="shop-pirate-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Pirate Munky: </p>
-                        <button id="pirateButton" style="font-size:20;"></button>
+                        <button id="pirateButton" style="font-size:20;">$25000</button>
+                        <label id="howManyPirate">x0</label>
                     </div>
-                    <div class="shop-scientist-munky item" style="display:none;" class= "hud-tooltips">
+                    <div class="shop-scientist-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Scientist Munky: </p>
-                        <button id="scientistButton" style="font-size:20;"></button>
+                        <button id="scientistButton" style="font-size:20;">$100000</button>
+                        <label id="howManyScientist">x0</label>
                     </div>
                     <div class="shop-spy-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Spy Munky: </p>
-                        <button id="spyButton" style="font-size:20;"></button>
+                        <button id="spyButton" style="font-size:20;">$500000</button>
+                        <label id="howManySpy">x0</label>
                     </div>
                     <div class="shop-ninja-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Ninja Munky: </p>
-                        <button id="ninjaButton" style="font-size:20;"></button>
+                        <button id="ninjaButton" style="font-size:20;">$2.00m</button>
+                        <label id="howManyNinja">x0</label>
                     </div>
                     <div class="shop-robo-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Robo Munky: </p>
-                        <button id="roboButton" style="font-size:20;"></button>
+                        <button id="roboButton" style="font-size:20;">$5.00m</button>
+                        <label id="howManyRobo">x0</label>
                     </div>
                     <div class="shop-superhero-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Superhero Munky: </p>
-                        <button id="superheroButton" style="font-size:20;"></button>
+                        <button id="superheroButton" style="font-size:20;">$25000000</button>
+                        <label id="howManySuperhero">x0</label>
                     </div>
                     <div class="shop-space-munky item" style="display:none;">
                         <br>
                         <p style="display:inline; margin:0;">Space Munky: </p>
-                        <button id="spaceButton" style="font-size:20;"></button>
+                        <button id="spaceButton" style="font-size:20;">$100000000</button>
+                        <label id="howManySpace">x0</label>
+                    </div>
+                </div>
+                <div class="settings" style="display: none;">
+                    <button id="admin-button-open">Admin Console</button>
+                    <br>
+                    <div class="adminPassDiv" ; style="display:none">
+                        <input id="adminPassword" type="text" ; placeholder="Password">
+                        <button id="adminConfirm">Confirm</button>
+                    </div>
+                    <div id="admin-console" class="admin" ; style="background-color: rgba(0, 0, 0, 0.4); display: none; position: relative;">
+                        <button id="give-1k">+1,000</button>
+                        <button id="give-1m">+1,000,000</button>
+                        <button id="give-1b">+1,000,000,000</button>
+                    </div>
+                </div>
+                <div id="stats-div" class="stats" >
+                    <label>Statistics<label>
+                    <div id = "totalMoneyDisplay" class="individual-stat"></div>
+                    <div id = "numClicks" class="individual-stat"></div>
+                    <div id = "totalItemsBought" class="individual-stat"></div>
+                    <div id = "totalUpgradesBought" class="individual-stat"></div>
+                    
+                    <label>Achievements</label>
+                    <div id="10DollarMilestone" style="display:none;">
+                        <p style="display:inline; margin:0;">Reach 10 Dollars!</p>
                     </div>
                 </div>
             </div>
-            <div class="hud-right";>
+            <div class="hud-right" ;>
                 <div class="socials">
                     <a href="https://discord.gg/mxQCYpGWKB" id="discord"></a>
                     <a href="https://www.reddit.com/r/MunkyClickerCommunity/" id="reddit"></a>
@@ -95,35 +131,65 @@
                     <a id="youtube"></a>
                 </div>
                 <div class="upgrades-top"><p>Upgrades</p></div>
-                <div class="upgrades">
-                    <div class = "upgradeItem1 upgradeItem" style="display:none;">
+                <div class="upgrades" >
+                    <div class="upgradeItem1 upgradeItem" style="display:none;">
                         <p style="display:inline; margin:0;">Need Mor Cliks: </p>
-                        <button id="clickUpg1" style="font-size:20;" ></button>
+                        <button id="clickUpg1" style="font-size:20;">$500</button>
                     </div>
-                    <div class = "upgradeItem2 upgradeItem" style="display:none;" >
+                    <div class="upgradeItem2 upgradeItem" style="display:none;">
                         <p style="display:inline; margin:0;">Munky Power: </p>
-                        <button id="munkyUpg2" style="font-size:20;" ></button>
+                        <button id="munkyUpg2" style="font-size:20;">$2000</button>
                     </div>
-                    <div class = "upgradeItem3 upgradeItem" style="display:none;" >
+                    <div class="upgradeItem3 upgradeItem" style="display:none;">
                         <p style="display:inline; margin:0;">Chef's Air Fryers: </p>
-                        <button id="munkyUpg3" style="font-size:20;"></button>
+                        <button id="munkyUpg3" style="font-size:20;">$7500</button>
                     </div>
-                    <div class = "upgradeItem4 upgradeItem" style="display:none;" >
+                    <div class="upgradeItem4 upgradeItem" style="display:none;">
                         <p style="display:inline; margin:0;">Bussin' Boom  Boxes: </p>
-                        <button id="munkyUpg4" style="font-size:20;"></button>
+                        <button id="munkyUpg4" style="font-size:20;">$20000</button>
+                    </div>
+                    <div class="upgradeItem5 upgradeItem" style="display:none;">
+                        <p style="display:inline; margin:0;">Glorious Model O Banana Mouse: </p>
+                        <button id="clickUpg5" style="font-size:20;">$20000</button>
+                    </div>
+                    <div class="upgradeItem6 upgradeItem" style="display:none;">
+                        <p style="display:inline; margin:0;">Red Butt Chimpanzees: </p>
+                        <button id="munkyUpg6" style="font-size:20;">$2000</button>
+                    </div>
+                    <div class="upgradeItem7 upgradeItem" style="display:none;">
+                        <p style="display:inline; margin:0;">Bottles O' Beer: </p>
+                        <button id="munkyUpg7" style="font-size:20;">$20000</button>
+                    </div>
+                    <div class="upgradeItem8 upgradeItem" style="display:none;">
+                        <p style="display:inline; margin:0;">Industrial Banana Ovens: </p>
+                        <button id="munkyUpg8" style="font-size:20;">$50000</button>
+                    </div>
+                    <div class="upgradeItem9 upgradeItem" style="display:none;">
+                        <p style="display:inline; margin:0;">Potassium-Infused Spyglass: </p>
+                        <button id="munkyUpg9" style="font-size:20;">$100000</button>
+                    </div>
+                    <div class="upgradeItem10 upgradeItem" style="display:none;">
+                        <p style="display:inline; margin:0;">Banana-Derived Liquid Adrenaline: </p>
+                        <button id="clickUpg10" style="font-size:20;">$150000</button>
+                    </div>
+                    <div class="upgradeItem11 upgradeItem" style="display:none;">
+                        <p style="display:inline; margin:0;">Banana Electric Guitars: </p>
+                        <button id="munkyUpg11" style="font-size:20;">$200000</button>
                     </div>
                 </div>
             </div>
-            <div class="hud-bottom";>
+            <div class="hud-bottom" ;>
             </div>
         </div>
-        <div class="hud-tooltips";>
-            <div id="hud-tooltip";></div>
+        <div class="hud-tooltips" ;>
+            <div id="hud-tooltip" ;>This basic tool is a small mechanical device designed to pick bananas more efficiently. It's a simple and inexpensive upgrade to help you get started on your monkey-collecting journey.</div>
         </div>
-        <div class="footer";>
-        <p class = "text";>Brought to you by xReqs_, TrashCan1103, and (CEO of the company) linedhurdle shout out to cchen & Kronzal</p>
+        <div class="footer" ;>
+        <p class="text" ;>Brought to you by TrashCan1103, xReqs_, and (CEO of the company) linedhurdle; shout out to cchen &amp; Kronzal</p>
+        
         </div>
-        <script src="asset/app.js";></script>
+        
+        <script src="asset/app.js" ;></script>
 
-    </body>
-</html>
+    
+</body></html>
