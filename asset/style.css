@@ -149,15 +149,18 @@ body {
 
 .item {
     position:relative;
-    justify-content:center;
     padding-left:5px;
-    padding-bottom:10px;
+    padding-top:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
     height:10%;
     background-color:rgb(179, 255, 255);
     border-left:8px solid rgb(0, 179, 179);
     border-bottom:2px solid rgb(0, 128, 128);
     font-size:30px;
 }
+
 .item label {
     position:absolute;
     bottom:5px;
@@ -349,4 +352,7 @@ button:hover {
     font-size:30px;
     font-family:'Courier New', monospace;
 }
+
+
+
 
